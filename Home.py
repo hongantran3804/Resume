@@ -7,7 +7,7 @@ with open("Hong An Tran Resume.pdf",'rb') as f:
     pdf = f.read()
 col1, col2 = st.columns([1,1.5])
 with col1:
-    st.image(image, width=255)
+    st.image(image,width=268)
 with col2:
     st.markdown("<h4>Hong An Tran</h4>",unsafe_allow_html=True)
     st.markdown("A Computer Science student seeking a summer Software Engineering internship.")
@@ -20,20 +20,19 @@ with col2:
     st.markdown("Email: <u style='color: blue;'>hongantran3804@gmail.com</u>",unsafe_allow_html=True)
     col21,col22,col23= st.columns([3,1.2,1])
     with col21:
-        st.markdown("Phone number: 714-719-6372")
+        st.markdown("Phone number: (714) 719-6372")
     with col22: 
         st.markdown("<a href='https://www.linkedin.com/in/hong-an-tran-4846b6255/'><u style='blue'>Linkedin</u></a>",unsafe_allow_html=True) 
     with col23:
         st.markdown("<a href='https://github.com/hongantran3804?tab=repositories'><u style='blue'>Github</u></a>",unsafe_allow_html=True)
         
 select = st.multiselect(label="Select options",options=['Technical Skills','Professional Experience','Education',"Extracurricular Involment"]
-                        ,default='Professional Experience')
+                        ,default=['Professional Experience',"Technical Skills"])
 if 'Technical Skills' in select:
     st.subheader("Technical Skills")
-    st.markdown("<strong>Strength: </strong> Analytical, Problem Solving, Well-Organization, Flexibility",unsafe_allow_html=True)
-    st.markdown("<strong>Propramming Language: </strong> Java, Python, C++, HTML/CSS, Git/Github, Microsoft Office - Excel, Word",
-                unsafe_allow_html=True)
-    st.markdown("<strong>Operating System: </strong> Windows 11",unsafe_allow_html=True)
+    st.markdown("<strong>Strengths: </strong> Analytical, Problem Solving, Well-Organization, Flexibility.",unsafe_allow_html=True)
+    st.markdown("<strong>Programming Languages: </strong> Java, Python, C++, HTML/CSS, Git/Github, AWS-EC2.", unsafe_allow_html=True)
+    st.markdown(f"<strong>Related Skills: </strong> Microsoft Office (Excel, Word).",unsafe_allow_html=True)
 if 'Professional Experience' in select:
     st.subheader("Professional Experience")
     with open("Lacaco_WorkFlow.pdf",'rb') as f:
@@ -48,24 +47,23 @@ if 'Professional Experience' in select:
     st.markdown("<h5><strong>August 2023 - Present</strong></h5>",unsafe_allow_html=True)
     st.markdown(
         """
-    <div><strong>Developed an automated email response system utilizing Python, Gmail API, Drive API, AWS EC2, and OpenAI API to enhance email processing efficiency for a company.</strong>
-    
-    - Implemented an auto-reply feature for customer inquiries requesting price lists, seamlessly storing customer details in the company's database, and intelligently assigning them to appropriate sales representatives.
-    <br>
-    - Streamlined the reception and processing of supplier emails containing price lists. The system efficiently extracted and transferred supplier data into the company's price list, ensuring accuracy and saving valuable time.
-    <br>
-    - Engineered a predictive module for unknown emails, categorizing them as potential customers, suppliers, or advertisements. For potential customers, the system automatically sent requests to fill out the company's website form. Identified and labeled supplier emails within Gmail, optimizing communication channels.</div>
+   <div>
+   ●	Automated responses for price list requests, storing customer details, and assigning to sales reps.
+   <br>
+●	Streamlined handling of supplier emails, extracting data for the company’s price list, and categorizing unknown emails for targeted responses
+
+   </div>
 """
     ,unsafe_allow_html=True)
 if 'Education' in select:
     st.subheader("Education")
     st.markdown("""
                 <div>
-    Orange Coast College at Costa Mesa | Costa Mesa, CA
+   <strong> Orange Coast College at Costa Mesa | Costa Mesa, CA</strong>
     <br>
-    A.S. in Computer Science (In Progress) | GPA: 4.0/4.0
+   <strong> A.S. in Computer Science (In Progress) | </strong> GPA: 4.0/4.0
     <br>
-    Expected Graduation Date: May 2025
+   <strong> Expected Graduation Date:</strong> May 2025
     <br>
 """,unsafe_allow_html=True)
 if "Extracurricular Involment" in select:
