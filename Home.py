@@ -29,29 +29,30 @@ with col2:
 select = st.multiselect(label="Select options",options=['Technical Skills','Professional Experience','Education',"Extracurricular Involment"]
                         ,default=['Professional Experience',"Technical Skills"])
 if 'Technical Skills' in select:
-    st.subheader("Technical Skills")
-    st.markdown("<strong>Strengths: </strong> Analytical, Problem Solving, Well-Organization, Flexibility.",unsafe_allow_html=True)
-    st.markdown("<strong>Programming Languages: </strong> Java, Python, C++, HTML/CSS, Git/Github, AWS-EC2.", unsafe_allow_html=True)
-    st.markdown(f"<strong>Related Skills: </strong> Microsoft Office (Excel, Word).",unsafe_allow_html=True)
+    col1,col2,col3 = st.columns(3)
+    with col2:
+        st.subheader("Technical Skills")
+    col4, col5, col6 = st.columns([1,30,1])
+    with col5:
+        
+        st.markdown(f"Java | Python | C++ | HTML/CSS | Git/Github | AWS - EC2 | Prompt Engineering | Microsoft Office")
 if 'Professional Experience' in select:
-    st.subheader("Professional Experience")
+    col1,col2,col3 = st.columns([1.5,3,1])
+    with col2:
+        st.subheader("Professional Experience")   
     with open("Lacaco_WorkFlow.pdf",'rb') as f:
         work_flow = f.read()
-    st.download_button(
-        label = "Download WorkFlow",
-        data=work_flow,
-        file_name="Lacaco_WorkFlow.pdf",
-        mime='application/pdf'
-    )
+    
     st.markdown("<h5><strong>Software Engineer Intern | Lacaco Wholesales | Garden Grove, CA</strong></h5>",unsafe_allow_html=True)
     st.markdown("<h5><strong>August 2023 - Present</strong></h5>",unsafe_allow_html=True)
     st.markdown(
         """
    <div>
-   ●	Automated responses for price list requests, storing customer details, and assigning to sales reps.
+   	●	Developed a tool leveraging Python, Gmail API for customer inquiries processing, incorporating EC2 for scalable deployment, resulting in a 50% reduction in response time, improving customer engagement.
    <br>
-●	Streamlined handling of supplier emails, extracting data for the company’s price list, and categorizing unknown emails for targeted responses
-
+	●	Integrated prompt engineering to implement ChatGPT-based models with 95%+ accuracy for auto  incoming email classification, leading to the efficient work assignment to appropriate teams.
+    <br>
+  ●	Unified Drive API to build a secure cloud-driven solution for maintaining a company database, leading to a 75% increase in database efficiency for storing and retrieving essential information 
    </div>
 """
     ,unsafe_allow_html=True)
@@ -70,12 +71,6 @@ if "Extracurricular Involment" in select:
     st.subheader("Extracurricular Involment")
     st.markdown("""
     <div>
-<strong>Community Outreach, 2019:</strong>
-<br>
-●	 Volunteered at a Catholic Church in VietNam, cooking and serving meals.
-<br>
-●	 Engaged with orphaned children through play and distributed gifts to enhance their well-being.
-<br><br>
 <strong>Thanksgiving Volunteer, 2023:</strong>
 <br>
 ●	Participated in a Thanksgiving event organized by VCSA (Vietnamese Community Student Association).
