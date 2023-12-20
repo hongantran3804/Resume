@@ -57,7 +57,9 @@ if 'Professional Experience' in select:
 """
     ,unsafe_allow_html=True)
 if 'Education' in select:
-    st.subheader("Education")
+    col1,col2,col3 = st.columns([2.5,3,1])
+    with col2:
+        st.subheader("Education")
     st.markdown("""
                 <div>
    <strong> Orange Coast College at Costa Mesa | Costa Mesa, CA</strong>
@@ -68,7 +70,9 @@ if 'Education' in select:
     <br>
 """,unsafe_allow_html=True)
 if "Extracurricular Involment" in select:
-    st.subheader("Extracurricular Involment")
+    col1,col2,col3 = st.columns([1.5,3,1])
+    with col2:
+        st.subheader("Extracurricular Involment")
     st.markdown("""
     <div>
 <strong>Thanksgiving Volunteer, 2023:</strong>
