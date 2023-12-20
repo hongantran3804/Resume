@@ -10,7 +10,7 @@ st.markdown("""
             """,unsafe_allow_html=True)
 st.markdown("""
             <strong>Link: </strong>
-            <a href = 'https://linkedin-job.streamlit.app/'><u style='color:blue'>Linkedin_Job</u></a> - 
+            <a href = 'https://linkedin-job.streamlit.app/'><u style='color:blue'>LinkedIn_Job</u></a> - 
             <a href = 'https://github.com/hongantran3804/Linkedin_Jobs'><u style = 'color:blue'> Github</u></a>
             """,unsafe_allow_html=True)
 ################################################################
