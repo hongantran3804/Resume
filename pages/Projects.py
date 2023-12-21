@@ -5,7 +5,9 @@ st.subheader("LinkedIn Jobs Scraping | Python")
 st.markdown(f"<h5><strong>November 2023</strong></h5>",unsafe_allow_html=True)
 st.markdown("""
 <div>
-●	Utilized Python, Selenium, and Streamlit to systematically gather job data from LinkedIn focusing on technical ones, constructing a machine learning model for salary prediction based on job titles and user skills, and visually presented the analysis through a user-friendly interface.
+●	Utilized Python and Selenium to systematically gather job data from LinkedIn focusing on software engineer and data science roles.
+<br>
+●	Constructed a machine learning model for salary prediction, and visually presented the analysis through a user-friendly interface with Streamlit.
 </div>
             """,unsafe_allow_html=True)
 st.markdown("""
@@ -15,6 +17,7 @@ st.markdown("""
             """,unsafe_allow_html=True)
 ################################################################
 st.subheader("Games | Space Invader | C++")
+st.markdown(f"<h5><strong>August 2023</strong></h5>",unsafe_allow_html=True)
 st.markdown("""
             <div>
 ●	Engineered spacecraft, enemy, and bullet dynamics in a space-invader game, incorporating collision checking algorithms to precisely respond to hits between player and enemy projectiles.
@@ -26,6 +29,7 @@ st.markdown("""<strong>Link: </strong>
             """,unsafe_allow_html=True)
 ################################################################
 st.subheader("Games | Snake | C++")
+st.markdown(f"<h5><strong>August 2023</strong></h5>",unsafe_allow_html=True)
 st.markdown("""
             <div>
 	●	Developed dynamic snake animation and size adjustments in a snake game by using precise position detection to enhance both visual appeal and gameplay dynamics.
@@ -40,7 +44,7 @@ st.subheader("Credit Score Prediction | Python")
 st.markdown(f"<h5><strong>February 2023</strong></h5>",unsafe_allow_html=True)
 st.markdown("""
 <div>
-●	Acquired Kaggle's credit score dataset, implementing Python and machine learning to construct a customer credit score analysis model. Integrated Streamlit for an UI, facilitating Exploratory Data Analysis (EDA) of customer credit information.
+●	Developed a machine learning model to predict customer credit score, leveraging thorough exploratory data analysis (EDA), and employing Streamlit to present findings and prediction results in a user-friendly interface.
 </div>
 """,unsafe_allow_html=True)
 st.markdown(f"""<strong>Link:</strong> <a href = 'https://predict-credit-score.streamlit.app/'><u style='color: blue'>Predict_Credit_Score</u></a> -

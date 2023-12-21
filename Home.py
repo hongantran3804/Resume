@@ -52,7 +52,7 @@ if 'Professional Experience' in select:
    <br>
 	●	Integrated prompt engineering to implement ChatGPT-based models with 95%+ accuracy for auto  incoming email classification, leading to the efficient work assignment to appropriate teams.
     <br>
-  ●	Unified Drive API to build a secure cloud-driven solution for maintaining a company database, leading to a 75% increase in database efficiency for storing and retrieving essential information 
+    ●	Enhanced operation efficiency by developing Python scripts to automatically convert diverse vendor price lists into company format, maintain them on cloud drive, and send updated prices to sales team.
    </div>
 """
     ,unsafe_allow_html=True)
