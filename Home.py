@@ -26,7 +26,7 @@ with col2:
     with col23:
         st.markdown("<a href='https://github.com/hongantran3804?tab=repositories'><u style='blue'>Github</u></a>",unsafe_allow_html=True)
         
-select = st.multiselect(label="Select options",options=['Technical Skills','Professional Experience','Education',"Extracurricular Involment"]
+select = st.multiselect(label="Select options",options=['Technical Skills','Professional Experience','Education']
                         ,default=['Professional Experience',"Technical Skills"])
 if 'Technical Skills' in select:
     col1,col2,col3 = st.columns(3)
@@ -69,19 +69,6 @@ if 'Education' in select:
    <strong> Expected Graduation Date:</strong> May 2025
     <br>
 """,unsafe_allow_html=True)
-if "Extracurricular Involment" in select:
-    col1,col2,col3 = st.columns([1.5,3,1])
-    with col2:
-        st.subheader("Extracurricular Involment")
-    st.markdown("""
-    <div>
-<strong>Thanksgiving Volunteer, 2023:</strong>
-<br>
-●	Participated in a Thanksgiving event organized by VCSA (Vietnamese Community Student Association).
-<br>
-●	Contributed by bringing gifts to homeless individuals and took part in some dance performances to uplift the festive spirit.  
-</div> 
- """,unsafe_allow_html=True)
 
 
 
