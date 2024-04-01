@@ -46,10 +46,13 @@ st.markdown(
     f"<strong>Technology used:</strong> Python, Python - Streamlit, Machine Learning Models",
     unsafe_allow_html=True,
 )
-st.markdown("""
+st.markdown(
+    """
 <div>
-●	Developed ML model for customer credit score prediction with EDA and Streamlit for a user-friendly interface.
+●	Created a web application for analyzing credit scores and predicting them based on user data.
 </div>
-""",unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 st.markdown(f"""<strong>Link:</strong> <a href = 'https://predict-credit-score.streamlit.app/'><u style='color: blue'>Predict_Credit_Score</u></a> -
             <a href = 'https://github.com/hongantran3804/Predict_Credit_Score'><u style = 'color:blue'> Github</u></a>""",unsafe_allow_html=True)
