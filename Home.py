@@ -25,7 +25,7 @@ with col2:
         st.markdown("<a href='https://www.linkedin.com/in/hong-an-tran-4846b6255/'><u style='blue'>Linkedin</u></a>",unsafe_allow_html=True) 
     with col23:
         st.markdown("<a href='https://github.com/hongantran3804?tab=repositories'><u style='blue'>Github</u></a>",unsafe_allow_html=True)
-        
+
 select = st.multiselect(label="Select options",options=['Technical Skills','Professional Experience','Education']
                         ,default=['Professional Experience',"Technical Skills"])
 if 'Technical Skills' in select:
@@ -42,20 +42,21 @@ if 'Professional Experience' in select:
         st.subheader("Professional Experience")   
     with open("Lacaco_WorkFlow.pdf",'rb') as f:
         work_flow = f.read()
-    
+
     st.markdown("<h5><strong>Software Engineer Intern | Lacaco Wholesales | Garden Grove, CA</strong></h5>",unsafe_allow_html=True)
     st.markdown("<h5><strong>August 2023 - Present</strong></h5>",unsafe_allow_html=True)
     st.markdown(
         """
    <div>
-   	●	Developed a tool leveraging Python, Gmail API for customer inquiries processing, incorporating EC2 for scalable deployment, resulting in a 50% reduction in response time, improving customer engagement.
+   	●	Developed an automatic tool for customer inquiries with Python, Gmail API, and AWS – EC2, resulting in a 50% reduction in response time.
    <br>
-	●	Integrated prompt engineering to implement ChatGPT-based models with 95%+ accuracy for auto  incoming email classification, leading to the efficient work assignment to appropriate teams.
+	●	Achieved a 95%+ accuracy rate in email classification by prompting ChatGPT-based models, resulting in efficient work assignment to appropriate teams.
     <br>
-    ●	Enhanced operation efficiency by developing Python scripts to automatically convert diverse vendor price lists into company format, maintain them on cloud drive, and send updated prices to sales team.
+    ●	Boosted operational efficiency by 20% with Python and Drive API, formatting vendor prices and distributing updated prices to the sales team.
    </div>
-"""
-    ,unsafe_allow_html=True)
+""",
+        unsafe_allow_html=True,
+    )
 if 'Education' in select:
     col1,col2,col3 = st.columns([2.5,3,1])
     with col2:
@@ -69,7 +70,3 @@ if 'Education' in select:
    <strong> Expected Graduation Date:</strong> May 2025
     <br>
 """,unsafe_allow_html=True)
-
-
-
-
