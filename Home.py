@@ -32,10 +32,17 @@ if 'Technical Skills' in select:
     col1,col2,col3 = st.columns(3)
     with col2:
         st.subheader("Technical Skills")
-    col4, col5, col6 = st.columns([1,30,1])
-    with col5:
-        
-        st.markdown(f"Java | Python | C++ | HTML/CSS | Git/Github | AWS - EC2 | Prompt Engineering | Microsoft Office")
+    st.markdown(
+            """
+   <div>
+   	●	C++, Python, Java, Javascript, Typescript, Git, HTML/CSS
+   <br>
+	●	AWS, Google APIs, ReactJS, NodeJS, NextJS, TailwindCSS, MongoDB, Prisma, Selenium, Streamlit
+    <br>
+   </div>
+""",
+            unsafe_allow_html=True,
+        )
 if 'Professional Experience' in select:
     col1,col2,col3 = st.columns([1.5,3,1])
     with col2:
@@ -44,7 +51,7 @@ if 'Professional Experience' in select:
         work_flow = f.read()
 
     st.markdown("<h5><strong>Software Engineer Intern | Lacaco Wholesales | Garden Grove, CA</strong></h5>",unsafe_allow_html=True)
-    st.markdown("<h5><strong>August 2023 - Present</strong></h5>",unsafe_allow_html=True)
+    st.markdown("<h5><strong>05/ 2023 - 08/ 2023</strong></h5>",unsafe_allow_html=True)
     st.markdown(
         """
    <div>
@@ -61,7 +68,8 @@ if 'Education' in select:
     col1,col2,col3 = st.columns([2.5,3,1])
     with col2:
         st.subheader("Education")
-    st.markdown("""
+    st.markdown(
+        """
                 <div>
    <strong> Orange Coast College at Costa Mesa | Costa Mesa, CA</strong>
     <br>
@@ -69,4 +77,7 @@ if 'Education' in select:
     <br>
    <strong> Expected Graduation Date:</strong> May 2025
     <br>
-""",unsafe_allow_html=True)
+    <strong> Relavant Coursework:</strong>  C++, Data Structures and Algorithms, Object-Oriented Programming, Python, Java, HTML/CSS, Javascript
+""",
+        unsafe_allow_html=True,
+    )
