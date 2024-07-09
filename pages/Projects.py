@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config("Projects",layout="centered")
 
-st.subheader("Wholesale Website (06/ 2024 – 07/ 2024)")
+st.subheader("Wholesale Website (07/ 2024)")
 st.markdown(
     "<strong>Tech Stack:</strong> Javascript, NextJS, AWS, Google APIs, TailwindCSS, MongoDB, Prisma, Vercel",
     unsafe_allow_html=True,
@@ -10,16 +10,16 @@ st.markdown(
 st.markdown(
     """
 <div>
-●   Implemented Google Translate API and Google Maps APIs to improve the shopping experience and enable
-real-time order tracking.
+●   Developed an e-commerce platform for easy product search and purchase.
+<br/>
+●   Implemented Google Translate API and Google Maps APIs for multilingual shopping experiences and real-time order tracking.
 <br/>
 ●   Integrated Google reCAPTCHA, NextAuth, and NodeMailer to establish robust user authentication,
 fortifying security measures.
 <br/>
-●   Achieved a significant 50% rendering speed increase through load balancing and CDN (Content
-Delivery Network) on Vercel, AWS - CloudFront and AWS - S3.
+●   Leveraged AWS (CloudFront, S3) and Vercel for high rendering speed and a seamless user experience.
 <br/>
-●   Utilized Prisma to optimize MongoDB queries, resulting in a 40% reduction in server response time.
+●   Achieved high server efficiency with Prisma by optimizing MongoDB queries.
 </div>
 """,
     unsafe_allow_html=True,
@@ -29,7 +29,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.subheader("LinkedIn Jobs Scraping (10/ 2023 - 12/ 2023)")
+st.subheader("LinkedIn Jobs Scraping (12/ 2023)")
 st.markdown("<strong>Tech Stack:</strong> Python, Selenium, Streamlit, Machine Learning", unsafe_allow_html=True)
 st.markdown(
     """
@@ -47,7 +47,7 @@ st.markdown("""
             <a href = 'https://linkedin-job.streamlit.app/'><u style='color:blue'>LinkedIn-Job</u></a>
             """,unsafe_allow_html=True)
 
-st.subheader("Games | Space Invader (02/ 2023 - 03/ 2023)")
+st.subheader("Games | Space Invader (03/ 2023)")
 st.markdown(
     "<strong>Tech Stack:</strong> C++, Window API",
     unsafe_allow_html=True,
