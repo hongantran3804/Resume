@@ -29,7 +29,7 @@ with col2:
 select = st.multiselect(label="Select options",options=['Technical Skills','Professional Experience','Education']
                         ,default=['Professional Experience',"Technical Skills"])
 if 'Technical Skills' in select:
-    col1,col2,col3 = st.columns(3)
+    col1,col2,col3 = st.columns([1,3,1])
     with col2:
         st.subheader("Technical Skills")
     st.markdown(
