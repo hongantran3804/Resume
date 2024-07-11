@@ -37,7 +37,7 @@ if 'Technical Skills' in select:
    <div>
    	●	C++, Python, Java, Javascript, Typescript, Git, HTML/CSS
    <br>
-	●	AWS, Google APIs, ReactJS, NodeJS, NextJS, TailwindCSS, MongoDB, Prisma, Selenium, Streamlit
+	●	AWS, Google APIs, ReactJS, NodeJS, NextJS, TailwindCSS, MongoDB, Prisma, Selenium, Streamlit, Stripe
     <br>
    </div>
 """,

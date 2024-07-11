@@ -4,7 +4,7 @@ st.set_page_config("Projects",layout="centered")
 
 st.subheader("Wholesale Website (07/ 2024)")
 st.markdown(
-    "<strong>Tech Stack:</strong> Javascript, NextJS, AWS, Google APIs, TailwindCSS, MongoDB, Prisma, Vercel",
+    "<strong>Tech Stack:</strong> Javascript, NextJS, AWS, Google APIs, TailwindCSS, MongoDB, Prisma, Vercel, Stripe",
     unsafe_allow_html=True,
 )
 st.markdown(
