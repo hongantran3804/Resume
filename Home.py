@@ -50,6 +50,27 @@ if 'Professional Experience' in select:
     with open("Lacaco_WorkFlow.pdf",'rb') as f:
         work_flow = f.read()
 
+    st.markdown(
+        "<h5><strong>Software Engineer Intern | Lacaco Wholesales | Garden Grove, CA</strong></h5>",
+        unsafe_allow_html=True,
+    )
+    st.markdown("<h5><strong>10/ 2024 – 12/ 2024</strong></h5>", unsafe_allow_html=True)
+    st.markdown(
+        """
+   <div>
+   	●	Developed a mock interview platform with trained AI models using ReactJS, NodeJS, and Python.
+   <br>
+	●	Boosted PostgreSQL performance by 80% using Redis caching for frequent queries and session management.
+    <br>
+    ●	Built text-to-speech and speech-to-text APIs with MeloTTS and Whisper, achieving 4.5/5 naturalness rating and 95% transcription accuracy.
+    <br>
+    ●	Collaborated with data science team to develop AI-powered interview feedback models achieving 95%+ accuracy, resulting in improved user performance and interview preparation.
+    <br><br>
+   </div>
+""",
+        unsafe_allow_html=True,
+    )
+
     st.markdown("<h5><strong>Software Engineer Intern | Lacaco Wholesales | Garden Grove, CA</strong></h5>",unsafe_allow_html=True)
     st.markdown("<h5><strong>05/ 2023 - 08/ 2023</strong></h5>",unsafe_allow_html=True)
     st.markdown(
