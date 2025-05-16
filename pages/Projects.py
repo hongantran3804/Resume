@@ -1,8 +1,8 @@
 import streamlit as st
 
-st.set_page_config("Projects",layout="centered")
+st.set_page_config("Projects", layout="centered")
 
-st.subheader("Wholesale Website (07/ 2024)")
+st.subheader("E-commerce Website (07/ 2024)")
 st.markdown(
     "<strong>Tech Stack:</strong> Javascript, NextJS, AWS, Google APIs, TailwindCSS, MongoDB, Prisma, Vercel, Stripe",
     unsafe_allow_html=True,
@@ -29,8 +29,11 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.subheader("LinkedIn Jobs Scraping (12/ 2023)")
-st.markdown("<strong>Tech Stack:</strong> Python, Selenium, Streamlit, Machine Learning", unsafe_allow_html=True)
+st.subheader("Web Scraper (12/ 2023)")
+st.markdown(
+    "<strong>Tech Stack:</strong> Python, Selenium, Streamlit, Machine Learning",
+    unsafe_allow_html=True,
+)
 st.markdown(
     """
 <div>
@@ -42,26 +45,10 @@ Streamlit and Machine Learning.
             """,
     unsafe_allow_html=True,
 )
-st.markdown("""
-            <strong>Link: </strong>
-            <a href = 'https://linkedin-job.streamlit.app/'><u style='color:blue'>LinkedIn-Job</u></a>
-            """,unsafe_allow_html=True)
-
-st.subheader("Games | Space Invader (03/ 2023)")
-st.markdown(
-    "<strong>Tech Stack:</strong> C++, Window API",
-    unsafe_allow_html=True,
-)
 st.markdown(
     """
-<div>
-●	Developed a Space Invader game utilizing Object-Oriented Programming (OOP) principles, leveraging
-data structures for efficient management and the Window API for rendering.
-</div>
+            <strong>Link: </strong>
+            <a href = 'https://linkedin-job.streamlit.app/'><u style='color:blue'>LinkedIn-Job</u></a>
             """,
     unsafe_allow_html=True,
 )
-
-st.markdown("""<strong>Link: </strong>
-        <a href='https://www.youtube.com/watch?v=cIVcRf7EKsQ'><u style='color:blue'>Space Invader</u></a>
-            """,unsafe_allow_html=True)
