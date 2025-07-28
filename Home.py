@@ -3,8 +3,8 @@ from PIL import Image
 
 st.set_page_config("Home", layout="centered")
 
-image = Image.open("newimg.png")
-with open("HongAnTran Resume.pdf", "rb") as f:
+image = Image.open("./linkedinImage.jpg")
+with open("./HongAnTran_Resume.pdf", "rb") as f:
     pdf = f.read()
 col1, col2 = st.columns([1, 1.5])
 with col1:
@@ -58,35 +58,23 @@ if "Education" in select:
 """,
         unsafe_allow_html=True,
     )
-    st.markdown(
-        """
-                <div>
-   <strong> Orange Coast College || Costa Mesa, CA</strong>
-    <br>
-   <strong> A.S. Computer Science | </strong> GPA: 4.0/4.0
-    <br>
-   <strong> Expected Graduation Date:</strong> May 2025
-    <br>
-    <strong> Relavant Coursework:</strong>  Data Structures and Algorithms, Object-Oriented Programming
-""",
-        unsafe_allow_html=True,
-    )
 if "Work Experience" in select:
     st.subheader("Work Experience")
     with open("Lacaco_WorkFlow.pdf", "rb") as f:
         work_flow = f.read()
 
     st.markdown(
-        "<h5><strong>CodeDay Labs | Open Source Contributor | Remote</strong></h5>",
+        "<h5><strong>CodeDay x HuggingFace | Open Source Contributor | Remote</strong></h5>",
         unsafe_allow_html=True,
     )
-    st.markdown("<h5><strong>04/ 2025 – 05/ 2025</strong></h5>", unsafe_allow_html=True)
+    st.markdown("<h5><strong>02/ 2025 – 05/ 2025</strong></h5>", unsafe_allow_html=True)
     st.markdown(
         """
    <div>
-   	●	Contributed to HuggingChat, an open-source chat UI with 1.2 million active users and 42 million monthly visits.
+   	●	Developed a <a href = 'https://github.com/huggingface/chat-ui/pull/1823'><u>pop-up search</u></a> search feature to enable real-time conversation lookup in HuggingChat, an open-source chat UI with 1.2 million active users and 42 million monthly visits.
    <br>
-    ●	Developed a <a href = 'https://github.com/huggingface/chat-ui/pull/1823'><u style='color: blue'>pop-up search</u></a> feature (Ctrl/Cmd + K) using Svelte, TypeScript, MongoDB, and Docker to enable real-time conversation lookup via client-side filtering.
+    ●	Implemented an intuitive search interface using Svelte and TypeScript, enabling users to quickly access previous conversations through a responsive popup (Ctrl/Cmd + K).
+    ●	Designed a new API endpoint for retrieving user conversation history from MongoDB.
     <br><br>
    </div>
 """,
